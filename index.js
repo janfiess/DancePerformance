@@ -208,11 +208,6 @@ io.on('connection', function (socket) {
     currentMode = "endMode";
     canVoteModeBeStarted = true;
   }
-
-
-
-
-
 });
 
 // put application on server

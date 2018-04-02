@@ -58,7 +58,7 @@ app.use(express.static(__dirname + '/public'));
 
 // routing
 app.get('/', function (req, res) {
-  res.redirect('/ines.html'); // alternative: res.sendfile('./public/index.html');
+  res.redirect('/index.html'); // alternative: res.sendfile('./public/index.html');
 });
 
 app.get('/show', function (req, res) {
@@ -208,6 +208,11 @@ io.on('connection', function (socket) {
     currentMode = "endMode";
     canVoteModeBeStarted = true;
   }
+
+
+
+
+
 });
 
 // put application on server

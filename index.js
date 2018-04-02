@@ -58,7 +58,7 @@ app.use(express.static(__dirname + '/public'));
 
 // routing
 app.get('/', function (req, res) {
-  res.redirect('/index.html'); // alternative: res.sendfile('./public/index.html');
+  res.redirect('/ui.html'); // alternative: res.sendfile('./public/index.html');
 });
 
 app.get('/show', function (req, res) {

@@ -10,7 +10,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 var vote_domenico = 0, vote_alex = 0;
 var countdown = 16;
 var isStopwatchRunnning = false;
@@ -58,7 +58,7 @@ app.use(express.static(__dirname + '/public'));
 
 // routing
 app.get('/', function (req, res) {
-  res.redirect('/index.html'); // alternative: res.sendfile('./public/index.html');
+  res.redirect('/ines.html'); // alternative: res.sendfile('./public/index.html');
 });
 
 app.get('/show', function (req, res) {

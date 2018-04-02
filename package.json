@@ -1,19 +1,20 @@
 {
-  "name": "socket-chat",
-  "version": "0.0.1",
-  "description": "simple server browser communication",
-  "dependencies": {
-    "express": "^4.16.2",
-    "socket.io": "^2.0.4"
-  },
+  "name": "dp",
+  "version": "1.0.0",
+  "description": "Tool for an audience interaction during a live performance on stage based on  express 4.16.2, socket.io 2.0.4 and mqtt 2.16.0. Because Socketio and MQTT kill ach other if they are installed regularly being mentioned in the package.json file in the dependencies section, I modified the packages until it worked. Thus, I now upload another package to NPM",
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.1.0",
+    "mqtt": "^2.16.0"
+  },
   "homepage": "http:janfiess.com",
-  "source": "https://socket.io/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janfiess/stage_mqtt.git"
+    "url": "git+https://github.com/janfiess/DancePerformance.git"
   },
+  "author": "Jan Fiess <mail@janfiess.com> (http://janfiess.com)",
   "license": "ISC"
 }
